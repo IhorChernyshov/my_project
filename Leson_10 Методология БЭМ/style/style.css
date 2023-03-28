@@ -1,0 +1,147 @@
+@charset "UTF-8";
+/* ОБНУЛЕНИЕ СТИЛЕЙ */
+*,
+*::before,
+*::after {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  box-sizing: border-box;
+}
+
+li {
+  list-style: none;
+}
+
+a,
+a:visited {
+  text-decoration: none;
+}
+
+a:hover {
+  text-decoration: none;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-weight: inherit;
+  font-size: inherit;
+}
+
+img {
+  vertical-align: top;
+}
+
+html,
+body {
+  height: 100%;
+}
+
+html {
+  font-size: 16px; /* по умолчанию */
+}
+
+body {
+  line-height: 1;
+  /* color: #000; */
+  /* font-family:""; */
+  font-size: 30px;
+}
+
+.wrapper {
+  min-height: 100%;
+  overflow: hidden;
+  padding: 50px;
+}
+
+/* ------------------------------ */
+p {
+  background-color: #794f45;
+  padding: 15px;
+}
+
+/*
+Блок
+НЕЗАВИСИМЫЙ объект.
+НЕ влияет на окружение (внешние объекты).
+*/
+/*
+В CSS обращаемся к БЭМ блоку
+селектором первого уровня
+*/
+/* Верно (независимость) */
+.who-we-are {
+  background-color: #7a956b;
+  color: #fff;
+  /* Можно */
+  padding: 15px;
+  /* Нельзя */
+  /* margin: 15px; */
+}
+
+.who-we-are__header {
+  margin: 0 0 36px 0;
+}
+
+.main-page__who-we-are {
+  margin: 0 0 30px 0;
+}
+
+.contacts__who-we-are {
+  margin: 0 0 100px 0;
+}
+
+/* Модифицированный блок */
+.who-we-are_pupple {
+  background-color: #77608d;
+}
+
+.who-we-are__title {
+  font-size: 20px;
+  margin: 0 0 15px 0;
+}
+
+.who-we-are__title_margin-font {
+  font-size: 50px;
+  margin: 0 0 30px 0;
+}
+
+/* Не верно (зависимость) */
+.item .who-we-are {
+  background-color: #7a956b;
+}
+
+.link {
+  font-size: 20px;
+  color: yellow;
+}
+
+/* БЭМ блок */
+.promice__header {
+  margin: 0 0 68px 0;
+}
+
+/* БЭМ элементы */
+/* БЭМ блок */
+/* БЭМ элементы */
+.block {
+  border: 1px solid #000;
+  padding: 15px;
+  background-color: #794f45;
+}
+
+.block__title {
+  font-size: 20px;
+  margin: 0 0 15px 0;
+}
+
+._container {
+  max-width: 500px;
+  margin: 0 auto;
+}
+
+/*# sourceMappingURL=style.css.map */

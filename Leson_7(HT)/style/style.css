@@ -1,0 +1,96 @@
+@charset "UTF-8";
+@import url("https://fonts.googleapis.com/css2?family=Roboto:wght@500&display=swap");
+/* ОБНУЛЕНИЕ СТИЛЕЙ */
+*,
+*::before,
+*::after {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  box-sizing: border-box;
+}
+
+li {
+  list-style: none;
+}
+
+a,
+a:visited {
+  text-decoration: none;
+}
+
+a:hover {
+  text-decoration: none;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-weight: inherit;
+  font-size: inherit;
+}
+
+img {
+  vertical-align: top;
+}
+
+html,
+body {
+  height: 100%;
+}
+
+html {
+  font-size: 16px; /* по умолчанию */
+}
+
+body {
+  line-height: 1;
+}
+
+.wrapper {
+  min-height: 100%;
+  overflow: hidden;
+  padding: 50px;
+}
+
+/* ------------------------------ */
+.block {
+  border: 5px solid yellow;
+  align-items: center;
+  min-height: 500px;
+  font-size: 20px;
+  max-width: 1000px;
+  background: green url("../img/download.jpeg") 50%/cover no-repeat;
+}
+
+.tablet {
+  border: 1px solid red;
+  min-height: 2000px;
+  background: linear-gradient(to bottom, rgba(0, 0, 0, 0.65) 0%, rgba(0, 0, 0, 0.65) 99%, rgba(0, 0, 0, 0) 100%), url("../img/i.webp") 50%/300px no-repeat scroll, violet url("../img/01.jpg") 50%/cover no-repeat;
+  max-width: 2000px;
+}
+
+.text {
+  font-size: 17px;
+  color: #e8e2e2;
+}
+
+.thing {
+  line-height: 20px;
+  font-size: 27px;
+  color: #e7e7ec;
+  text-align: center;
+  padding: 100px;
+}
+
+.icon {
+  border: 10px solid blue;
+  min-height: 1300px;
+  max-width: 3000px;
+  background: url("../img/511abb19f63e98e27f94.jpg") 0 0/600px no-repeat, green url("../img/download.jpeg") 50%/cover no-repeat;
+}
+
+/*# sourceMappingURL=style.css.map */

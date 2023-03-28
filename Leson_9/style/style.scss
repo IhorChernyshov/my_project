@@ -1,0 +1,150 @@
+/* ОБНУЛЕНИЕ СТИЛЕЙ */
+*,
+*::before,
+*::after {
+    margin: 0;
+    padding: 0;
+    border: 0;
+    box-sizing: border-box;
+}
+li {
+    list-style: none;
+}
+a,
+a:visited {
+    text-decoration: none;
+}
+a:hover {
+    text-decoration: none;
+}
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    font-weight: inherit;
+    font-size: inherit;
+}
+img {
+    vertical-align: top;
+}
+html,
+body {
+    height: 100%;
+}
+html {
+    font-size: 16px; /* по умолчанию */
+}
+body {
+    line-height: 1;
+    /* color: #000; */
+    /* font-family:""; */
+    font-family: Arial, "Helvetica Neue", Helvetica, sans-serif;
+}
+.wrapper {
+    min-height: 100%;
+    overflow: hidden;
+    padding: 50px;
+}
+/* ------------------------------ */
+
+//.block {
+//    color: #000000;
+//    background:  url("../img/france-in-pictures-beautiful-places-to-photograph-eiffel-tower.jpg") 50% / cover no-repeat;
+//    padding: 100px 50px;
+//    // .block__title
+//    &__title {
+//        font-size: 50px;
+//        margin:0 0 50px 0;
+//    }
+//
+//    // .block__subtitle
+//    &__subtitle {
+//        font-size: 40px;
+//        margin:0 0 40px 0;
+//    }
+//
+//    // .block__text
+//    &__text {
+//        font-size: 30px;
+//        margin:0 0 30px 0;
+//    }
+//
+//    // .block__button
+//    &__button{
+//        display: inline-block;
+//        font-size: 50px;
+//        color: #000000;
+//        padding:17px 50px 17px 20px;
+//        background: red url("../img/i.webp") right center / 30px no-repeat;
+//
+//    }
+//}
+
+
+
+
+//.items {
+//
+//}
+//
+//.item {
+//    display: inline-block;
+//    background: #7a956b;
+//    vertical-align: top;
+//    padding: 30px;
+//    width: 33.333%;
+//    margin: 0 30px 0 0;
+//
+//}
+
+//.icon{
+//    align-items: center;
+//    margin-top:300px;
+//    max-width:100%;
+//    min-height: 600px;
+//    background:#fff;
+//    box-shadow: 3px 5px 10px red ;
+//    background:  url("../img/france-in-pictures-beautiful-places-to-photograph-eiffel-tower.jpg") 50% /  cover  no-repeat;
+//}
+
+.block {
+    font-size: 0;
+}
+
+.block__item {
+    display:inline-block;
+    width: 33.333%;
+    vertical-align: top;
+    padding:0 30px 0 86px;
+
+}
+
+
+.block__title {
+color: #c40945;
+    font-size: 19px;
+    margin: 0 0 15px 0;
+    line-height: 26px;
+    font-weight: 900;
+}
+
+.block__text {
+    color: #747a7a;
+    font-size: 16px;
+    line-height: 1.5;
+    letter-spacing: 0.15px;
+}
+
+.block__item_1 {
+    background:  url("../img/ho-chi-minh-city-vietnam-october-st-versace-logo-sto-store-based-medusa-who-was-reputed-to-be-37834473.jpg") 0 0 no-repeat;
+}
+
+.block__item_2 {
+    background:  url("../img/Versace-Emblem.jpg") 0 0 / 50px no-repeat;
+}
+
+.block__item_3 {
+    background:  url("../img/ho-chi-minh-city-vietnam-october-st-versace-logo-sto-store-based-medusa-who-was-reputed-to-be-37834473.jpg") 0 0 no-repeat;
+}

@@ -1,0 +1,53 @@
+body {
+    padding: 24px;
+}
+
+h1 {
+    font-size: 50px;
+    margin-left: 230px;
+    margin-bottom: -5px;
+    border-top: 4px solid black;
+    max-width: 850px;
+    color: purple;
+}
+p.line {
+    margin-left: 230px;
+    font-size: 18px;
+    border-bottom: 2px solid black;
+    max-width: 850px;
+}
+.block__icon {
+    margin-left: 230px;
+}
+h2 {
+    margin: -240px 0 28px 630px;
+}
+.block__point {
+    font-size: 17px;
+    margin-left: 630px;
+    color: grey;
+}
+.block__text {
+    font-size: 17px;
+    margin-left: 630px;
+}
+.block__word {
+    font-size: 12px;
+    margin-left: 630px;
+    background-color: rgb(239 236 236);
+    color: grey;
+    max-width: 80px;
+}
+.block__sord {
+    font-size: 12px;
+    margin-left: 715px;
+    margin-top: -26px;
+    background-color: rgb(239 236 236);
+    color: grey;
+    max-width: 60px;
+
+}
+
+*{
+    color: darkorchid;
+}

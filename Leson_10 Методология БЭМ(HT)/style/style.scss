@@ -1,0 +1,314 @@
+/* ОБНУЛЕНИЕ СТИЛЕЙ */
+*,
+*::before,
+*::after {
+    margin: 0;
+    padding: 0;
+    border: 0;
+    box-sizing: border-box;
+}
+li {
+    list-style: none;
+}
+a,
+a:visited {
+    text-decoration: none;
+}
+a:hover {
+    text-decoration: none;
+}
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    font-weight: inherit;
+    font-size: inherit;
+}
+img {
+    vertical-align: top;
+}
+html,
+body {
+    height: 100%;
+}
+html {
+    font-size: 16px; /* по умолчанию */
+}
+body {
+    line-height: 1;
+    /* color: #000; */
+    /* font-family:""; */
+    font-size: 30px;
+}
+.wrapper {
+    min-height: 100%;
+    overflow: hidden;
+    padding: 50px;
+}
+/* ------------------------------ */
+
+p{
+    background-color: pink;
+    //color: #fff;
+    line-height:35px;
+
+}
+
+
+
+.who-we-are {
+    padding: 50px;
+   background-color: violet;
+
+    .who-we-are {
+        // .who-we-are__header
+        &__header {
+            margin: 0 0 36px 0;
+        }
+    }
+
+    // .who-we-are__container
+    &__container {
+    }
+
+    // .who-we-are__content
+    &__contant {
+    }
+
+    // .who-we-are__sub-title
+    &__sub-title {
+        margin: 0 0 27px 0;
+        text-transform: uppercase;
+        letter-spacing: 2.5px;
+        vertical-align: middle;
+
+
+    }
+
+    // .who-we-are__title
+    &__title {
+        font-size: 40px;
+        margin: 0 0 20px 0;
+    }
+
+    // .who-we-are__text
+    &__text {
+        font-size: 25px;
+
+    }
+
+    .who-we-are__title_font-100{
+        font-size: 100px;
+    }
+
+        }
+
+
+.promise {
+    padding: 50px;
+    background-color: green;
+
+    // .promise__container
+    &__container {
+    }
+
+    .promise {
+        // .promise__header
+        &__header {
+            margin: 0 0 68px 0;
+        }
+    }
+
+    // .promise__content
+    &__content {
+    }
+
+    // .promise__sub-title
+    &__sub-title {
+        margin: 0 0 27px 0;
+        text-transform: uppercase;
+        letter-spacing: 2.5px;
+    }
+
+    // .promise__title
+    &__title {
+    }
+
+    // .promise__text
+    &__text {
+    }
+
+}
+
+.who-we-are {
+
+}
+
+
+.main-page {
+    // .main-page__who-we-are
+    &__who-we-are {
+        margin: 0 0 30px 0;
+    }
+}
+
+.contacts {
+    // .contacts__who-we-are
+    &__who-we-are {
+        margin: 0 0 100px 0;
+    }
+}
+
+
+
+
+
+
+.header-item {
+    // .header-item__title
+    &__title {
+    }
+
+    // .header-item__sub-title
+    &__sub-title {
+    }
+}
+
+
+
+
+.header-item {
+    // .header-item__title
+    &__title {
+    }
+
+    // .header-item__sub-title
+    &__sub-title {
+    }
+}
+
+
+.wrapper {
+}
+
+.header {
+}
+
+.main {
+}
+
+.who-we-are {
+    // .who-we-are__container
+    &__container {
+    }
+
+    // .who-we-are__content
+    &__content {
+    }
+
+    // .who-we-are__sub-title
+    &__sub-title {
+    }
+
+    // .who-we-are__title
+    &__title {
+        // .who-we-are__title_font-100
+        &_font-100 {
+        }
+    }
+
+    // .who-we-are__text
+    &__text {
+    }
+
+    // .who-we-are__header
+    &__header {
+    }
+}
+
+.promise {
+    // .promise__container
+    &__container {
+    }
+
+    // .promise__content
+    &__content {
+    }
+
+    // .promise__sub-title
+    &__sub-title {
+    }
+
+    // .promise__title
+    &__title {
+    }
+
+    // .promise__text
+    &__text {
+    }
+
+    // .promise__header
+    &__header {
+    }
+
+    // .promise__items
+    &__items {
+    }
+
+    // .promise__item
+    &__item {
+    }
+}
+
+
+
+.item-promise {
+
+    // .item-promise__icon
+    &__icon {
+    }
+
+    // .item-promise__text
+    &__text {
+    }
+}
+
+//.item {
+//    // .item__promise
+//    &__promise {
+//        // .item__promise__body
+//        &__body {
+//        }
+//
+//        // .item__promise__title
+//        &__title {
+//        }
+//    }
+//}
+
+.promise{
+    &__items{
+        font-size: 0;
+        white-space: nowrap;
+        //display: flex;
+
+    }
+
+    &__item{
+        //flex:1 1 30%;
+        display: inline-block;
+        white-space: normal;
+        font-size: 24px;
+        width: 30%;
+        margin-right: 5%;
+        vertical-align: top;
+        color: black;
+    }
+}
+
+
+
+
+
