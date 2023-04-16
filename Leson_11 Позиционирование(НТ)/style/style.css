@@ -1,0 +1,99 @@
+@charset "UTF-8";
+/* ОБНУЛЕНИЕ СТИЛЕЙ */
+*,
+*::before,
+*::after {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  box-sizing: border-box;
+}
+
+li {
+  list-style: none;
+}
+
+a,
+a:visited {
+  text-decoration: none;
+}
+
+a:hover {
+  text-decoration: none;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-weight: inherit;
+  font-size: inherit;
+}
+
+img {
+  vertical-align: top;
+}
+
+html,
+body {
+  height: 100%;
+}
+
+html {
+  font-size: 16px; /* по умолчанию */
+}
+
+body {
+  line-height: 1;
+  overflow-x: hidden;
+  /* color: #000; */
+  /* font-family:""; */
+  font-size: 30px;
+}
+
+.wrapper {
+  min-height: 100%;
+  padding: 50px;
+  color: white;
+}
+
+/* ------------------------------ */
+.menu__body {
+  position: fixed;
+  width: 100%;
+  height: 100%;
+  top: -100%;
+  left: 0;
+  background-color: brown;
+  padding: 50px;
+  overflow: auto;
+  transition: all 0.5s ease 0s;
+}
+.menu__body::before {
+  transition: all 0.5s ease 0s;
+  content: "";
+  width: 100%;
+  height: 150px;
+  position: fixed;
+  top: -100%;
+  left: 0;
+  background-color: #77608d;
+}
+.menu__item:not(:last-child) {
+  margin: 0 0 20px 0;
+}
+.menu__link {
+  color: white;
+}
+
+.wrapper:hover .menu__body {
+  top: 0;
+}
+
+.wrapper:hover .menu__body::before {
+  top: 0;
+}
+
+/*# sourceMappingURL=style.css.map */

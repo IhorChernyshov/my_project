@@ -1,0 +1,97 @@
+/* ОБНУЛЕНИЕ СТИЛЕЙ */
+*,
+*::before,
+*::after {
+    margin: 0;
+    padding: 0;
+    border: 0;
+    box-sizing: border-box;
+}
+li {
+    list-style: none;
+}
+a,
+a:visited {
+    text-decoration: none;
+}
+a:hover {
+    text-decoration: none;
+}
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    font-weight: inherit;
+    font-size: inherit;
+}
+img {
+    vertical-align: top;
+}
+html,
+body {
+    height: 100%;
+}
+html {
+    font-size: 16px; /* по умолчанию */
+}
+body {
+    line-height: 1;
+    /* color: #000; */
+    /* font-family:""; */
+    font-size: 30px;
+}
+.wrapper {
+    min-height: 100%;
+    padding: 50px;
+    background-color: #4d4a4a;
+}
+/* ------------------------------ */
+
+.block {
+    border: 10px solid brown;
+    display: flex;
+    //height: 600px;
+    //justify-content: flex-start;
+    //align-items: flex-start;
+    //align-content: flex-start;
+    flex-direction: column;
+    flex-wrap: wrap;
+    //gap: 10px;
+
+    // .block__element
+    //&__element {
+    //    border: 10px solid #345e34;
+    //    padding: 20px;
+    //    font-size: 40px;
+    //    color: #fff;
+    //}
+    &__element:nth-child(2) {
+        font-size: 60px;
+    }
+}
+
+.block__element {
+    border: 10px solid #345e34;
+    padding: 20px;
+    font-size: 40px;
+    color: #fff;
+
+}
+
+.block__element:nth-child(1) {
+    order: 4;
+}
+.block__element:nth-child(2) {
+    order: 2;
+}
+.block__element:nth-child(3) {
+    order: 3;
+}
+.block__element:nth-child(4) {
+    order: 1;
+}
+
+.block__element_align {
+}

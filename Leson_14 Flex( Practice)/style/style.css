@@ -1,0 +1,149 @@
+@charset "UTF-8";
+@import url("https://fonts.googleapis.com/css?family=Roboto:regular,500,700,900&display=swap");
+/* ОБНУЛЕНИЕ СТИЛЕЙ */
+*,
+*::before,
+*::after {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  box-sizing: border-box;
+}
+
+li {
+  list-style: none;
+}
+
+a,
+a:visited {
+  text-decoration: none;
+}
+
+a:hover {
+  text-decoration: none;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-weight: inherit;
+  font-size: inherit;
+}
+
+img {
+  vertical-align: top;
+}
+
+html,
+body {
+  height: 100%;
+}
+
+html {
+  /* по умолчанию */
+  /* font-size: 16px;  */
+}
+
+body {
+  line-height: 1;
+  color: #4b4b4b;
+  font-family: "Roboto";
+  background-color: #f5f5f5;
+}
+
+.wrapper {
+  min-height: 100%;
+  overflow: hidden;
+  display: flex;
+  flex-direction: column;
+}
+
+/* ------------------------------ */
+[class*=__container] {
+  max-width: 1250px;
+  margin: 0 auto;
+  padding: 0 15px;
+}
+
+.header {
+  background-color: #794f45;
+  padding: 15px;
+}
+
+.footer {
+  background-color: #794f45;
+  padding: 15px;
+}
+
+.main {
+  flex: 1 1 auto;
+}
+
+.titles__label {
+  padding: 0 0 0 35px;
+  background: url("../img/02.svg") 5px 0 no-repeat;
+  color: #5d62b5;
+  font-size: 12px;
+  line-height: 2;
+  letter-spacing: 2.5px;
+  text-transform: uppercase;
+  font-weight: 700;
+}
+.titles__item {
+  color: #000;
+  font-size: 36px;
+  line-height: 1.16;
+  font-weight: 900;
+}
+
+.titles *:not(:last-child) {
+  margin: 0 0 33px 0;
+}
+
+.promise__header {
+  margin: 0 0 68px 0;
+}
+
+.promise__items {
+  display: flex;
+  margin: 0 -12px;
+  row-gap: 24px;
+  flex-wrap: wrap;
+}
+.promise__item {
+  flex: 1 1 33.333%;
+  padding: 0 12px;
+  min-width: 360px;
+}
+
+.item-promise {
+  display: flex;
+  align-items: flex-start;
+  column-gap: 23px;
+}
+.item-promise__icon {
+  flex: 0 0 63px;
+  max-width: 63px;
+}
+.item-promise__body {
+  padding: 0 0 0 23px;
+}
+.item-promise__title {
+  font-weight: 900;
+  font-size: 27px;
+  line-height: 1.37;
+  color: #f2726f;
+}
+.item-promise__title:not(:last-child) {
+  margin: 0 0 20px 0;
+}
+.item-promise__text {
+  font-size: 19px;
+  line-height: 1.2;
+  letter-spacing: 1.1px;
+}
+
+/*# sourceMappingURL=style.css.map */

@@ -1,0 +1,41 @@
+/* ОБНУЛЕНИЕ СТИЛЕЙ */
+*,
+*::before,
+*::after {
+    margin: 0;
+    padding: 0;
+    border: 0;
+}
+li {
+    list-style: none;
+}
+a,
+a:visited {
+    text-decoration: none;
+}
+a:hover {
+    text-decoration: none;
+}
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    font-weight: inherit;
+    font-size: inherit;
+}
+img {
+    vertical-align: top;
+}
+html {
+    font-size: 12px; /* по умолчанию */
+}
+body {
+    font-size: 1.5rem;
+     font-family: "Gilroy", sans-serif;
+
+}
+
+/*# sourceMappingURL=style.css.map */
+/* ------------------------------ */
