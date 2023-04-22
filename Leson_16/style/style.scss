@@ -1,4 +1,3 @@
-@import url('https://fonts.googleapis.com/css?family=Roboto:regular,500,700,900&display=swap');
 /* ОБНУЛЕНИЕ СТИЛЕЙ */
 *,
 *::before,
@@ -40,9 +39,9 @@ html {
 }
 body {
     line-height: 1;
-    color: #4b4b4b;
+    color: #fff;
+    background-color: #333;
     font-family: 'Roboto', sans-serif;
-    background-color: #f5f5f5;
 }
 .wrapper {
     min-height: 100%;
@@ -51,3 +50,247 @@ body {
     flex-direction: column;
 }
 /* ------------------------------ */
+
+.main {
+    flex-grow: 1;
+    padding: 30px;
+}
+
+[class*='__container'] {
+    max-width: 1050px;
+    margin: 0 auto;
+    padding: 0 15px;
+}
+
+.main {
+    // .main__form
+    &__form {
+        margin: 0 0 100px 0;
+    }
+}
+
+.block {
+    //border: 1px solid red;
+    // .block__line
+    &__line {
+    }
+    &__line:not(:last-child) {
+        margin: 0 0 20px 0;
+    }
+
+    // .block__label
+    &__label {
+        display: block;
+        margin: 0 0 10px 0;
+        cursor: pointer;
+    }
+
+    // .block__input
+    &__input {
+        cursor: pointer;
+        height: 30px;
+        padding: 0 15px;
+        width: 100%;
+    }
+}
+
+.block__button {
+    padding: 10px 15px;
+    border-radius: 3px;
+    cursor: pointer;
+    background-color: #804cb0;
+}
+
+.checkbox {
+    position: relative;
+    // .checkbox__input
+    &__input {
+        position: absolute;
+        top: 0;
+        left: 0;
+        opacity: 0;
+    }
+
+    &__input:focus + &__label {
+        outline: 1px solid #efefef;
+    }
+    &__input:checked + &__label::before {
+        background-color: red;
+        //transform: rotate(-180deg)
+    }
+    // .checkbox__label
+    &__label {
+        display: flex;
+        column-gap: 10px;
+        align-items: center;
+        cursor: pointer;
+    }
+    &__label::before {
+        content: '';
+        align-self: flex-start;
+        flex: 0 0 20px;
+        height: 20px;
+        background-color: #fff;
+        border-radius: 5px;
+        //transition: all 0.3s ease 0s;
+    }
+}
+
+.radiobuttons {
+    position: relative;
+
+    &__item {
+        position: relative;
+    }
+    &__item:not(:last-child) {
+        margin: 0 0 10px 0;
+    }
+
+    &__input {
+        position: absolute;
+        top: 0;
+        left: 0;
+        opacity: 0;
+    }
+    &__input:focus + &__label::before {
+        box-shadow: 0 0 10px rgb(255, 212, 0);
+    }
+    &__input:checked + &__label::after {
+        transform: scale(1);
+    }
+
+    &__label {
+        display: inline-flex;
+        column-gap: 10px;
+        align-items: center;
+        cursor: pointer;
+        position: relative;
+    }
+    &__label::before {
+        cursor: pointer;
+        content: '';
+        align-self: flex-start;
+        flex: 0 0 20px;
+        height: 20px;
+        background-color: #fff;
+        border-radius: 50%;
+    }
+    &__label::after {
+        //transform: translate(0, 0);
+        content: '';
+        transition: transform 0.3s ease 0s;
+        position: absolute;
+        width: 10px;
+        height: 10px;
+        background-color: red;
+        border-radius: 50%;
+        top: 5px;
+        left: 5px;
+        transform: scale(0);
+    }
+}
+
+.file {
+    position: relative;
+    // .file__input
+    &__input {
+        position: absolute;
+        top: 0;
+        left: 0;
+        opacity: 0;
+        font-size: 0;
+    }
+
+    // .file__label
+    &__label {
+        cursor: pointer;
+        background-color: green;
+        border-radius: 20px;
+        padding: 10px 15px;
+    }
+}
+
+.block {
+    // .block__select
+    &__select {
+        width: 100%;
+        height: 30px;
+        padding: 0 15px;
+    }
+
+    // .block__textarea
+    &__textarea {
+        width: 100%;
+        height: 180px;
+        background-color: gold;
+        padding: 0 15px;
+        resize: vertical;
+    }
+}
+
+.switcher {
+    position: relative;
+    // .switcher__input
+    &__input {
+        position: absolute;
+        top: 0;
+        left: 0;
+        opacity: 0;
+    }
+
+    &__input:focus + &__label {
+        outline: 1px solid green;
+    }
+    &__input:checked + &__label {
+        background-color: green;
+    }
+    &__input:checked + &__label::before {
+        background-color: green;
+        transform: translate(100%, -50%);
+    }
+    // .switcher__label
+    &__label {
+        transition: background-color 0.3s ease 0s;
+        position: relative;
+        display: inline-block;
+        cursor: pointer;
+        background-color: white;
+        width: 50px;
+        height: 20px;
+        border-radius: 10px;
+    }
+    &__label::before {
+        transition: transform 0.3s ease 0s;
+        content: '';
+        height: 25px;
+        width: 25px;
+        position: absolute;
+        top: 50%;
+        left: 0;
+        transform: translate(0, -50%);
+        background-color: #fff;
+        box-shadow: 0 0 5px rgba(0, 0, 0, 1.3);
+        border-radius: 50%;
+    }
+}
+
+.block__textarea::placeholder {
+    color: purple;
+}
+
+.block__input {
+    color: red;
+    background-color: #fff;
+    height: 30px;
+    width: 100%;
+    padding: 0 10px;
+}
+
+.block__input:focus::placeholder{
+    font-size: 0;
+}
+
+.block__input::placeholder {
+    color: red;
+
+}

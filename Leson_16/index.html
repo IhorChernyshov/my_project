@@ -1,16 +1,248 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en" xmlns="http://www.w3.org/1999/html">
     <head>
         <link rel="stylesheet" href="style/style.css" />
         <meta charset="UTF-8" />
-        <title>Leson_16</title>
+        <title>Lesson_16</title>
     </head>
     <body>
         <div class="wrapper">
-            <header class="header">Я шапка</header>
+            <header class="header"></header>
             <main class="main">
+                <form class="main__form block" action="#">
+                    <div class="block__line">
+                        <!--                        <label  for="username" class="block__label">Введите имя</label>-->
+                        <input
+                            placeholder="Введите имя"
+                            id="username"
+                            autocomplete="off"
+                            type="text"
+                            name="username"
+                            class="block__input"
+                        />
+                    </div>
+                    <div class="block__line">
+                        <div class="checkbox">
+                            <input
+                                id="car"
+                                autocomplete="off"
+                                type="checkbox"
+                                name="car"
+                                class="checkbox__input"
+                            />
+                            <label for="car" class="checkbox__label">Автомобиль?</label>
+                        </div>
+                    </div>
+
+                    <div class="block__line">
+                        <div class="switcher">
+                            <input
+                                id="switcher"
+                                autocomplete="off"
+                                type="checkbox"
+                                name="switcher"
+                                class="switcher__input"
+                            />
+                            <label for="switcher" class="switcher__label"></label>
+                        </div>
+                    </div>
+
+                    <div class="block__line">
+                        <div class="radiobuttons">
+                            <div class="radiobuttons__item">
+                                <input
+                                    id="color_1"
+                                    autocomplete="off"
+                                    type="radio"
+                                    name="color"
+                                    class="radiobuttons__input"
+                                />
+                                <label for="color_1" class="radiobuttons__label">Зеленый</label>
+                            </div>
+
+                            <div class="radiobuttons__item">
+                                <input
+                                    id="color_2"
+                                    autocomplete="off"
+                                    type="radio"
+                                    name="color"
+                                    class="radiobuttons__input"
+                                />
+                                <label for="color_2" class="radiobuttons__label">Красный</label>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="block__line">
+                        <div class="file">
+                            <input id="file_1" class="file__input" type="file" />
+                            <label for="file_1" class="file__label">Выбрать файл</label>
+                        </div>
+                    </div>
+
+                    <div class="block__line">
+                        <select name="select" class="block__select">
+                            <option value="1" selected>Я Пункт №1</option>
+                            <option value="2">Пункт №2</option>
+                            <option value="3">Пункт №3</option>
+                            <option value="4">Пункт №4</option>
+                        </select>
+                    </div>
+                    <div class="block__line">
+                        <textarea
+                            placeholder="Коментарий"
+                            autocomplete="off"
+                            name="text"
+                            class="block__textarea"
+                        ></textarea>
+                    </div>
+
+                    <button type="submit" class="block__button">Send</button>
+                </form>
+
+                <form action="#">
+                    <label for="input_01"> Я подпись к полю</label>
+                    <label>
+                        <input
+                            id="input_01"
+                            autocomplete="off"
+                            required
+                            placeholder=" Строка "
+                            name="string"
+                            value="123"
+                            type="text"
+                        />
+
+                        <input
+                            autocomplete="off"
+                            required
+                            placeholder=" Число"
+                            name="number"
+                            value=""
+                            type="number"
+                        />
+
+                        <input
+                            autocomplete="off"
+                            required
+                            placeholder=" Номер"
+                            name="phone"
+                            value=""
+                            type="tel"
+                        />
+
+                        <input
+                            autocomplete="off"
+                            required
+                            placeholder=" Почта"
+                            name="email"
+                            value=""
+                            type="email"
+                        />
+
+                        <input
+                            autocomplete="off"
+                            required
+                            placeholder=" Календарь"
+                            name="calendar"
+                            value=""
+                            type="datetime-local"
+                        />
+                        <input
+                            autocomplete="off"
+                            accept=".jpg,.png"
+                            multiple
+                            required
+                            placeholder=" Файл"
+                            name="file"
+                            value=""
+                            type="file"
+                        />
+
+                        <div>
+                            <input
+                                checked
+                                autocomplete="off"
+                                required
+                                placeholder=""
+                                name="check"
+                                value="on"
+                                type="checkbox"
+                            />
+                            car
+                        </div>
+                        <input
+                            checked
+                            autocomplete="off"
+                            required
+                            placeholder=""
+                            name="sex"
+                            value="m"
+                            type="radio"
+                        />
+                        M
+                        <input
+                            autocomplete="off"
+                            required
+                            placeholder=""
+                            name="sex"
+                            value="f"
+                            type="radio"
+                        />
+                        Ж
+                        <div>
+                            <input
+                                checked
+                                autocomplete="off"
+                                required
+                                name="color"
+                                value="red"
+                                type="radio"
+                            />
+                            red
+                            <input
+                                disabled
+                                autocomplete="off"
+                                required
+                                name="color"
+                                value="blue"
+                                type="radio"
+                            />
+                            blue
+                        </div>
+                        <textarea name="text">
+Lorem ipsum dolor sit amet, consectetur adipisicing elit. Accusamus atque consequuntur earum et ipsum laborum laudantium minus non nulla, omnis quod ratione recusandae sunt suscipit tempore, temporibus veniam vero voluptatibus
+                        </textarea>
+                        <input
+                            autocomplete="off"
+                            required
+                            maxlength="8"
+                            placeholder=" Пароль"
+                            name="password"
+                            value=""
+                            type="password"
+                        />
+                        <input
+                            autocomplete="off"
+                            required
+                            maxlength="8"
+                            placeholder=" Пароль"
+                            name="password"
+                            value=""
+                            type="range"
+                        />
+                    </label>
+                    <div>
+                        <select multiple required name="select" class="form">
+                            <option value="1">Пункт №1</option>
+                            <option selected value="2">Пункт №2</option>
+                            <option value="3">Пункт №3</option>
+                            <option selected value="4">Пункт №4</option>
+                        </select>
+                    </div>
+                </form>
             </main>
-            <footer class="footer">Я подвал</footer>
+            <footer class="footer"></footer>
         </div>
     </body>
 </html>
