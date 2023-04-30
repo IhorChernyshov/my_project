@@ -65,5 +65,18 @@ body {
 @media (min-width: 1250px) {
   .item-block {
     max-width: 350px; } }
+.block__container {
+  color: red;
+  background-color: #c9aa12;
+  border: 4px solid #1c0eee; }
+
+.item-block__image {
+  border: 5px solid #c9aa12; }
+.item-block__title {
+  color: #4c4cb0;
+  font-size: 24px; }
+.item-block__text {
+  color: #b04c4c;
+  font-size: 15px; }
 
 /*# sourceMappingURL=style.css.map */

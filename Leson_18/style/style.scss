@@ -1,5 +1,6 @@
-
-
+@import "mixin";
+@import "size";
+@import "palitra";
 @import "null";
 
 body {
@@ -54,4 +55,57 @@ $main:#eee;
 }
 
 
+@mixin theme($color) {
+    color: $color;
+    background-color: $color4;
+    border: 4px solid $color2;
+}
 
+
+
+
+.block {
+    // .block__container
+    &__container {
+        @include theme(red);
+    }
+
+    // .block__items
+    &__items {
+    }
+
+    // .block__item
+    &__item {
+    }
+}
+
+.item-block {
+    // .item-block__picture
+    &__picture {
+    }
+
+    // .item-block__image
+    &__image {
+        border: 5px solid $color4;
+    }
+
+    // .item-block__body
+    &__body {
+    }
+
+    // .item-block__title
+    &__title {
+       color:  $title1;
+        font-size: $size4;
+    }
+
+    // .item-block__text
+    &__text {
+        color:  $title2;
+        font-size: $size2;
+    }
+
+    // .item-block__button
+    &__button {
+    }
+}
