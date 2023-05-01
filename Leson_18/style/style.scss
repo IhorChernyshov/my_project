@@ -1,7 +1,7 @@
-@import "mixin";
-@import "size";
-@import "palitra";
-@import "null";
+@import 'mixin';
+@import 'size';
+@import 'palitra';
+@import 'null';
 
 body {
     line-height: 1;
@@ -17,7 +17,7 @@ body {
 }
 /* ------------------------------ */
 
-$main:#eee;
+$main: #eee;
 
 /* ------------------------------ */
 
@@ -48,64 +48,128 @@ $main:#eee;
         //max-width: none;
     }
 }
-@media (min-width:1250px){
-    .item-block{
+@media (min-width: 1250px) {
+    .item-block {
         max-width: 350px;
     }
 }
 
+//@mixin theme($color) {
+//    color: $color;
+//    background-color: $color4;
+//    border: 4px solid $color2;
+//}
+//
+////
+//@mixin ibg($position:center) {
+//    position: relative;
+//    img{
+//        object-fit: cover;
+//        object-position: $position;
+//        position: absolute;
+//        width: 100%;
+//        height: 100%;
+//        top: 0;
+//        left: 0;
+//    }
+//}
+//%ibg {
+//    position: relative;
+//
+//    img {
+//        object-fit: cover;
+//        object-position: center;
+//        position: absolute;
+//        width: 100%;
+//        height: 100%;
+//        top: 0;
+//        left: 0;
+//    }
+//}
 
-@mixin theme($color) {
-    color: $color;
-    background-color: $color4;
-    border: 4px solid $color2;
-}
+//.block {
+//    // .block__container
+//    &__container {
+//        @include theme(red);
+//    }
+//
+//    // .block__items
+//    &__items {
+//        display: flex;
+//        flex-wrap: wrap;
+//        row-gap: 20px;
+//        margin: 0 -15px;
+//    }
+//
+//    // .block__item
+//    &__item {
+//        padding: 0 15px;
+//        flex: 1 1 30.701%;
+//        min-width: 290px;
+//    }
+//}
+//
+//.item-block {
+//    display: flex;
+//    flex-direction: column;
+//    // .item-block__picture
+//    &__picture {
+//        //@extend %ibg;
+//        @include ibg();
+//        padding: 0 0 74.28% 0;
+//    }
+//
+//    // .item-block__image
+//    &__image {
+//    }
+//
+//    // .item-block__body
+//    &__body {
+//    }
+//
+//    // .item-block__title
+//    &__title {
+//        color: $title1;
+//        font-size: $size4;
+//    }
+//
+//    // .item-block__text
+//    &__text {
+//        color: $title2;
+//        font-size: $size2;
+//    }
+//
+//    // .item-block__button
+//    &__button {
+//    }
+//}
 
-
-
-
-.block {
-    // .block__container
-    &__container {
-        @include theme(red);
-    }
-
-    // .block__items
-    &__items {
-    }
-
-    // .block__item
+.list {
+    padding: 30px;
+    // .list__item
     &__item {
-    }
-}
+        transform: translate(-100%, 0);
+        transition: 0.9s;
 
-.item-block {
-    // .item-block__picture
-    &__picture {
-    }
-
-    // .item-block__image
-    &__image {
-        border: 5px solid $color4;
-    }
-
-    // .item-block__body
-    &__body {
+        @for $var from 1 to 5 {
+            $delay:0.1*$var;
+            &:nth-child(#{$var}) {
+                transition-delay:$delay + s;
+            }
+            &:not(:last-child) {
+                margin-bottom: 15px;
+            }
+        }
     }
 
-    // .item-block__title
-    &__title {
-       color:  $title1;
+    // .list__link
+    &__link {
+        color: $color0;
         font-size: $size4;
     }
-
-    // .item-block__text
-    &__text {
-        color:  $title2;
-        font-size: $size2;
-    }
-
-    // .item-block__button
-    &__button {
+    &:hover {
+        .list__item {
+            transform: translate(0, 0);
+        }
     }
 }
