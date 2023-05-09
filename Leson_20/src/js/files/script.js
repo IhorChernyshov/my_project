@@ -2,3 +2,8 @@
 // import { isMobile } from "./functions.js";
 // import { formsModules } from "./forms/forms.js";
 
+
+// Пусть переменная "number"содержит число 10
+let number = 10;
+
+console.log(number);

@@ -2,3 +2,6 @@
 // import { isMobile } from "./functions.js";
 // import { formsModules } from "./forms/forms.js";
 
+let number = 10;
+
+console.log(number);

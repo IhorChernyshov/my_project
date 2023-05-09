@@ -56,14 +56,14 @@ body {
     min-height: 500px;
     font-size: 20px;
     max-width: 1000px;
-    background: green url("../img/download.jpeg")  50% / cover no-repeat;
+    background: green url("../img/download.jpeg")  0 0 / cover no-repeat;
 
 }
 
 .tablet{
     border: 1px solid red;
     min-height: 2000px;
-    background:  linear-gradient(to bottom, rgba(0,0,0,0.65) 0%,rgba(0,0,0,0.65) 99%,rgba(0,0,0,0) 100%),  url("../img/i.webp") 50% / 300px  no-repeat scroll, violet url("../img/01.jpg") 50% /  cover no-repeat ;
+    background:  linear-gradient(to bottom, rgba(0,0,0,0.95) 0%,rgba(0,0,0,0.65) 99%,rgba(0,0,0,0) 100%), violet url("../img/01.jpg") 50% /  cover no-repeat ;
     max-width: 2000px;
 }
 
@@ -83,8 +83,8 @@ body {
 .icon{
     border: 10px solid blue;
     min-height: 1300px;
-    max-width: 3000px;
-    background:   url("../img/511abb19f63e98e27f94.jpg") 0 0 / 600px no-repeat, green url("../img/download.jpeg") 50% /  cover no-repeat;
+    //max-width: 3000px;
+    background:   url("../img/511abb19f63e98e27f94.jpg") 0 0 / cover no-repeat, green url("../img/download.jpeg") 50% /  cover no-repeat;
 
 }
 

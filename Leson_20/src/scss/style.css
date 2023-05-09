@@ -1,21 +1,21 @@
 /*
 Error: Invalid CSS after "...ing: 0 rem(math": expected ")", was ".div($container..."
-        on line 93 of style.scss
+        on line 94 of style.scss
 
-88:             max-width: rem($maxWidthContainer);
-89:             box-sizing: content-box;
-90:             margin: 0 auto;
-91:         }
-92:         @if ($containerPadding>0) {
-93:             padding: 0 rem(math.div($containerPadding, 2));
-94:         }
-95:     }
-96: } @else {
-97:     // По брейк-поинтам
-98:     [class*='__container'] {
+89:             max-width: rem($maxWidthContainer);
+90:             box-sizing: content-box;
+91:             margin: 0 auto;
+92:         }
+93:         @if ($containerPadding>0) {
+94:             padding: 0 rem(math.div($containerPadding, 2));
+95:         }
+96:     }
+97: } @else {
+98:     // По брейк-поинтам
+99:     [class*='__container'] {
 
 Backtrace:
-style.scss:93
+style.scss:94
 /home/brand/.gem/gems/sass-3.7.4/lib/sass/scss/parser.rb:1308:in `expected'
 /home/brand/.gem/gems/sass-3.7.4/lib/sass/script/lexer.rb:240:in `expected!'
 /home/brand/.gem/gems/sass-3.7.4/lib/sass/script/parser.rb:862:in `assert_tok'
@@ -77,4 +77,4 @@ style.scss:93
 body:before {
   white-space: pre;
   font-family: monospace;
-  content: "Error: Invalid CSS after \"...ing: 0 rem(math\": expected \")\", was \".div($container...\"\A         on line 93 of style.scss\A \A 88:             max-width: rem($maxWidthContainer);\A 89:             box-sizing: content-box;\A 90:             margin: 0 auto;\A 91:         }\A 92:         @if ($containerPadding>0) {\A 93:             padding: 0 rem(math.div($containerPadding, 2));\A 94:         }\A 95:     }\A 96: } @else {\A 97:     // По брейк-поинтам\A 98:     [class*='__container'] {"; }
+  content: "Error: Invalid CSS after \"...ing: 0 rem(math\": expected \")\", was \".div($container...\"\A         on line 94 of style.scss\A \A 89:             max-width: rem($maxWidthContainer);\A 90:             box-sizing: content-box;\A 91:             margin: 0 auto;\A 92:         }\A 93:         @if ($containerPadding>0) {\A 94:             padding: 0 rem(math.div($containerPadding, 2));\A 95:         }\A 96:     }\A 97: } @else {\A 98:     // По брейк-поинтам\A 99:     [class*='__container'] {"; }
