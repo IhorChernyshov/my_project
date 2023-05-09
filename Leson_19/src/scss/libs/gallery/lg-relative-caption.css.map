@@ -1,0 +1,7 @@
+{
+"version": 3,
+"mappings": "AAEQ,2CAAa;EACT,WAAW,EAAE,MAAM;EACnB,MAAM,EAAE,IAAI;EACZ,OAAO,EAAE,CAAC;EACV,gBAAgB,EAAE,IAAI;AAE1B,wDAA0B;EACtB,OAAO,EAAE,CAAC;EACV,OAAO,EAAE,MAAM;EACf,UAAU,EAAE,iBAAiB;AAI7B,yEAA0B;EACtB,OAAO,EAAE,CAAC",
+"sources": ["lg-relative-caption.scss"],
+"names": [],
+"file": "lg-relative-caption.css"
+}

@@ -1,0 +1,7 @@
+{
+"version": 3,
+"mappings": "AAEC,iBAAc;EACb,OAAO,EAAE,IAAI;AAGd,YAAS;EACR,MAAM,EAAE,cAAc;EACtB,OAAO,EAAE,eAAe;EACxB,aAAa,EAAE,MAAM;EACrB,wBAAc;IACb,MAAM,EAAE,cAAc;AAIxB,cAAW;EACV,MAAM,EAAE,cAAc;EACtB,OAAO,EAAE,eAAe",
+"sources": ["tabs.scss"],
+"names": [],
+"file": "tabs.css"
+}

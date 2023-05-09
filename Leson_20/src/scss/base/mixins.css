@@ -1,0 +1,44 @@
+/*
+Error: Invalid CSS after "	$result: math": expected "}", was ".div($px, $from..."
+        on line 13 of mixins.scss
+
+8: 		font-style: #{$style};
+9: 	}
+10: }
+11: //Percent
+12: @function percent($px, $from) {
+13: 	$result: math.div($px, $from) * 100%;
+14: 	@return $result;
+15: }
+16: //REM
+17: @function rem($px) {
+18: 	$result: math.div($px, 16) + rem;
+
+Backtrace:
+mixins.scss:13
+/home/brand/.gem/gems/sass-3.7.4/lib/sass/scss/parser.rb:1308:in `expected'
+/home/brand/.gem/gems/sass-3.7.4/lib/sass/scss/parser.rb:1238:in `expected'
+/home/brand/.gem/gems/sass-3.7.4/lib/sass/scss/parser.rb:1233:in `tok!'
+/home/brand/.gem/gems/sass-3.7.4/lib/sass/scss/parser.rb:690:in `block'
+/home/brand/.gem/gems/sass-3.7.4/lib/sass/scss/parser.rb:272:in `function_directive'
+/home/brand/.gem/gems/sass-3.7.4/lib/sass/scss/parser.rb:234:in `special_directive'
+/home/brand/.gem/gems/sass-3.7.4/lib/sass/scss/parser.rb:209:in `directive'
+/home/brand/.gem/gems/sass-3.7.4/lib/sass/scss/parser.rb:707:in `block_child'
+/home/brand/.gem/gems/sass-3.7.4/lib/sass/scss/parser.rb:700:in `block_contents'
+/home/brand/.gem/gems/sass-3.7.4/lib/sass/scss/parser.rb:137:in `stylesheet'
+/home/brand/.gem/gems/sass-3.7.4/lib/sass/scss/parser.rb:41:in `parse'
+/home/brand/.gem/gems/sass-3.7.4/lib/sass/engine.rb:414:in `_to_tree'
+/home/brand/.gem/gems/sass-3.7.4/lib/sass/engine.rb:389:in `_render_with_sourcemap'
+/home/brand/.gem/gems/sass-3.7.4/lib/sass/engine.rb:307:in `render_with_sourcemap'
+/home/brand/.gem/gems/sass-3.7.4/lib/sass/exec/sass_scss.rb:387:in `run'
+/home/brand/.gem/gems/sass-3.7.4/lib/sass/exec/sass_scss.rb:63:in `process_result'
+/home/brand/.gem/gems/sass-3.7.4/lib/sass/exec/base.rb:50:in `parse'
+/home/brand/.gem/gems/sass-3.7.4/lib/sass/exec/base.rb:18:in `parse!'
+/home/brand/.gem/gems/sass-3.7.4/bin/sass:13:in `<top (required)>'
+/home/brand/.gem/bin/sass:25:in `load'
+/home/brand/.gem/bin/sass:25:in `<main>'
+*/
+body:before {
+  white-space: pre;
+  font-family: monospace;
+  content: "Error: Invalid CSS after \"	$result: math\": expected \"}\", was \".div($px, $from...\"\A         on line 13 of mixins.scss\A \A 8: 		font-style: #{$style};\A 9: 	}\A 10: }\A 11: //Percent\A 12: @function percent($px, $from) {\A 13: 	$result: math.div($px, $from) * 100%;\A 14: 	@return $result;\A 15: }\A 16: //REM\A 17: @function rem($px) {\A 18: 	$result: math.div($px, 16) + rem;"; }

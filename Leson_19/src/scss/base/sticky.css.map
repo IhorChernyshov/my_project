@@ -1,0 +1,7 @@
+{
+"version": 3,
+"mappings": "AAAA,aAAc;EACb,QAAQ,EAAE,QAAQ",
+"sources": ["sticky.scss"],
+"names": [],
+"file": "sticky.css"
+}

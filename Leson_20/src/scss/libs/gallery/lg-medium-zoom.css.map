@@ -1,0 +1,7 @@
+{
+"version": 3,
+"mappings": "AAAA,oBAAqB;EACjB,MAAM,EAAE,OAAO;;AAGf,yBAAU;EACN,MAAM,EAAE,QAAQ;EAGZ,+CAAc;IACV,MAAM,EAAE,QAAQ;EAKpB,mDAAc;IACV,MAAM,EAAE,QAAQ",
+"sources": ["lg-medium-zoom.scss"],
+"names": [],
+"file": "lg-medium-zoom.css"
+}

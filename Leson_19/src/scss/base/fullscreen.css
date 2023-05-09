@@ -1,0 +1,78 @@
+/*
+Error: Undefined variable: "$mobile".
+        on line 5 of fullscreen.scss
+
+1: [data-fullscreen] {
+2: 	min-height: 100vh;
+3: 	.touch & {
+4: 		min-height: calc(var(--vh, 1vh) * 100);
+5: 		@media (max-width: $mobile) {
+6: 			transition: height 0.2s;
+7: 		}
+8: 	}
+9: }
+
+Backtrace:
+fullscreen.scss:5
+/home/brand/.gem/gems/sass-3.7.4/lib/sass/script/tree/variable.rb:49:in `_perform'
+/home/brand/.gem/gems/sass-3.7.4/lib/sass/script/tree/node.rb:50:in `perform'
+/home/brand/.gem/gems/sass-3.7.4/lib/sass/tree/visitors/perform.rb:551:in `block in run_interp_no_strip'
+/home/brand/.gem/gems/sass-3.7.4/lib/sass/tree/visitors/perform.rb:549:in `map'
+/home/brand/.gem/gems/sass-3.7.4/lib/sass/tree/visitors/perform.rb:549:in `run_interp_no_strip'
+/home/brand/.gem/gems/sass-3.7.4/lib/sass/tree/visitors/perform.rb:556:in `run_interp'
+/home/brand/.gem/gems/sass-3.7.4/lib/sass/tree/visitors/perform.rb:521:in `visit_media'
+/home/brand/.gem/gems/sass-3.7.4/lib/sass/tree/visitors/base.rb:36:in `visit'
+/home/brand/.gem/gems/sass-3.7.4/lib/sass/tree/visitors/perform.rb:158:in `block in visit'
+/home/brand/.gem/gems/sass-3.7.4/lib/sass/stack.rb:79:in `block in with_base'
+/home/brand/.gem/gems/sass-3.7.4/lib/sass/stack.rb:135:in `with_frame'
+/home/brand/.gem/gems/sass-3.7.4/lib/sass/stack.rb:79:in `with_base'
+/home/brand/.gem/gems/sass-3.7.4/lib/sass/tree/visitors/perform.rb:158:in `visit'
+/home/brand/.gem/gems/sass-3.7.4/lib/sass/tree/visitors/perform.rb:440:in `block (2 levels) in visit_rule'
+/home/brand/.gem/gems/sass-3.7.4/lib/sass/tree/visitors/perform.rb:440:in `map'
+/home/brand/.gem/gems/sass-3.7.4/lib/sass/tree/visitors/perform.rb:440:in `block in visit_rule'
+/home/brand/.gem/gems/sass-3.7.4/lib/sass/tree/visitors/perform.rb:179:in `with_environment'
+/home/brand/.gem/gems/sass-3.7.4/lib/sass/tree/visitors/perform.rb:438:in `visit_rule'
+/home/brand/.gem/gems/sass-3.7.4/lib/sass/tree/visitors/base.rb:36:in `visit'
+/home/brand/.gem/gems/sass-3.7.4/lib/sass/tree/visitors/perform.rb:158:in `block in visit'
+/home/brand/.gem/gems/sass-3.7.4/lib/sass/stack.rb:79:in `block in with_base'
+/home/brand/.gem/gems/sass-3.7.4/lib/sass/stack.rb:135:in `with_frame'
+/home/brand/.gem/gems/sass-3.7.4/lib/sass/stack.rb:79:in `with_base'
+/home/brand/.gem/gems/sass-3.7.4/lib/sass/tree/visitors/perform.rb:158:in `visit'
+/home/brand/.gem/gems/sass-3.7.4/lib/sass/tree/visitors/perform.rb:440:in `block (2 levels) in visit_rule'
+/home/brand/.gem/gems/sass-3.7.4/lib/sass/tree/visitors/perform.rb:440:in `map'
+/home/brand/.gem/gems/sass-3.7.4/lib/sass/tree/visitors/perform.rb:440:in `block in visit_rule'
+/home/brand/.gem/gems/sass-3.7.4/lib/sass/tree/visitors/perform.rb:179:in `with_environment'
+/home/brand/.gem/gems/sass-3.7.4/lib/sass/tree/visitors/perform.rb:438:in `visit_rule'
+/home/brand/.gem/gems/sass-3.7.4/lib/sass/tree/visitors/base.rb:36:in `visit'
+/home/brand/.gem/gems/sass-3.7.4/lib/sass/tree/visitors/perform.rb:158:in `block in visit'
+/home/brand/.gem/gems/sass-3.7.4/lib/sass/stack.rb:79:in `block in with_base'
+/home/brand/.gem/gems/sass-3.7.4/lib/sass/stack.rb:135:in `with_frame'
+/home/brand/.gem/gems/sass-3.7.4/lib/sass/stack.rb:79:in `with_base'
+/home/brand/.gem/gems/sass-3.7.4/lib/sass/tree/visitors/perform.rb:158:in `visit'
+/home/brand/.gem/gems/sass-3.7.4/lib/sass/tree/visitors/base.rb:52:in `block in visit_children'
+/home/brand/.gem/gems/sass-3.7.4/lib/sass/tree/visitors/base.rb:52:in `map'
+/home/brand/.gem/gems/sass-3.7.4/lib/sass/tree/visitors/base.rb:52:in `visit_children'
+/home/brand/.gem/gems/sass-3.7.4/lib/sass/tree/visitors/perform.rb:167:in `block in visit_children'
+/home/brand/.gem/gems/sass-3.7.4/lib/sass/tree/visitors/perform.rb:179:in `with_environment'
+/home/brand/.gem/gems/sass-3.7.4/lib/sass/tree/visitors/perform.rb:166:in `visit_children'
+/home/brand/.gem/gems/sass-3.7.4/lib/sass/tree/visitors/base.rb:36:in `block in visit'
+/home/brand/.gem/gems/sass-3.7.4/lib/sass/tree/visitors/perform.rb:186:in `visit_root'
+/home/brand/.gem/gems/sass-3.7.4/lib/sass/tree/visitors/base.rb:36:in `visit'
+/home/brand/.gem/gems/sass-3.7.4/lib/sass/tree/visitors/perform.rb:157:in `visit'
+/home/brand/.gem/gems/sass-3.7.4/lib/sass/tree/visitors/perform.rb:10:in `visit'
+/home/brand/.gem/gems/sass-3.7.4/lib/sass/tree/root_node.rb:36:in `css_tree'
+/home/brand/.gem/gems/sass-3.7.4/lib/sass/tree/root_node.rb:29:in `render_with_sourcemap'
+/home/brand/.gem/gems/sass-3.7.4/lib/sass/engine.rb:389:in `_render_with_sourcemap'
+/home/brand/.gem/gems/sass-3.7.4/lib/sass/engine.rb:307:in `render_with_sourcemap'
+/home/brand/.gem/gems/sass-3.7.4/lib/sass/exec/sass_scss.rb:387:in `run'
+/home/brand/.gem/gems/sass-3.7.4/lib/sass/exec/sass_scss.rb:63:in `process_result'
+/home/brand/.gem/gems/sass-3.7.4/lib/sass/exec/base.rb:50:in `parse'
+/home/brand/.gem/gems/sass-3.7.4/lib/sass/exec/base.rb:18:in `parse!'
+/home/brand/.gem/gems/sass-3.7.4/bin/sass:13:in `<top (required)>'
+/home/brand/.gem/bin/sass:25:in `load'
+/home/brand/.gem/bin/sass:25:in `<main>'
+*/
+body:before {
+  white-space: pre;
+  font-family: monospace;
+  content: "Error: Undefined variable: \"$mobile\".\A         on line 5 of fullscreen.scss\A \A 1: [data-fullscreen] {\A 2: 	min-height: 100vh;\A 3: 	.touch & {\A 4: 		min-height: calc(var(--vh, 1vh) * 100);\A 5: 		@media (max-width: $mobile) {\A 6: 			transition: height 0.2s;\A 7: 		}\A 8: 	}\A 9: }"; }

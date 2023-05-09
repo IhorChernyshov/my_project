@@ -1,0 +1,7 @@
+{
+"version": 3,
+"mappings": "AAAA,QAAS;EACR,OAAO,EAAE,IAAI;EACb,WAAW,EAAE,MAAM;EACnB,eAAe,EAAE,MAAM;EAKvB,cAAQ;IACP,OAAO,EAAE,IAAI",
+"sources": ["pagging.scss"],
+"names": [],
+"file": "pagging.css"
+}
